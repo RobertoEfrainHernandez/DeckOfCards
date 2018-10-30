@@ -8,20 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		573898C221864E5300E6210D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573898C121864E5300E6210D /* AppDelegate.swift */; };
-		573898C421864E5300E6210D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573898C321864E5300E6210D /* ViewController.swift */; };
+		573898C421864E5300E6210D /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573898C321864E5300E6210D /* InitialViewController.swift */; };
 		573898C721864E5300E6210D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573898C521864E5300E6210D /* Main.storyboard */; };
 		573898C921864E5500E6210D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 573898C821864E5500E6210D /* Assets.xcassets */; };
 		573898CC21864E5500E6210D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573898CA21864E5500E6210D /* LaunchScreen.storyboard */; };
+		573898D42186529600E6210D /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573898D32186529600E6210D /* PreviewViewController.swift */; };
+		573898D621865B9F00E6210D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573898D521865B9F00E6210D /* Card.swift */; };
+		577DCC1421881F220006CA57 /* SuitHeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577DCC1321881F220006CA57 /* SuitHeaderLabel.swift */; };
+		577DCC1C218848A90006CA57 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577DCC1B218848A90006CA57 /* CardViewModel.swift */; };
+		577DCC2021884E290006CA57 /* Extension+InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577DCC1F21884E290006CA57 /* Extension+InitialViewController.swift */; };
+		577DCC22218850000006CA57 /* CardPreviewImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577DCC21218850000006CA57 /* CardPreviewImageView.swift */; };
+		57A5088621878F5D00A0E756 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5088521878F5D00A0E756 /* CardCell.swift */; };
+		57A508882187905F00A0E756 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A508872187905F00A0E756 /* CardImageView.swift */; };
+		57A5088A21879FA100A0E756 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5088921879FA100A0E756 /* Deck.swift */; };
+		57A5088C2187A0E500A0E756 /* DeckOfCardsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5088B2187A0E500A0E756 /* DeckOfCardsAPI.swift */; };
+		57A5088E2187AB3300A0E756 /* CardResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5088D2187AB3300A0E756 /* CardResults.swift */; };
+		E75F8167808937D22FD0B8C9 /* Pods_DeckOfCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1E8898CD6B209AFA02FDE7 /* Pods_DeckOfCards.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C1E8898CD6B209AFA02FDE7 /* Pods_DeckOfCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeckOfCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		573898BE21864E5300E6210D /* DeckOfCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573898C121864E5300E6210D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		573898C321864E5300E6210D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		573898C321864E5300E6210D /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		573898C621864E5300E6210D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		573898C821864E5500E6210D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		573898CB21864E5500E6210D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		573898CD21864E5500E6210D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		573898D32186529600E6210D /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		573898D521865B9F00E6210D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		577DCC1321881F220006CA57 /* SuitHeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuitHeaderLabel.swift; sourceTree = "<group>"; };
+		577DCC1B218848A90006CA57 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		577DCC1F21884E290006CA57 /* Extension+InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+InitialViewController.swift"; sourceTree = "<group>"; };
+		577DCC21218850000006CA57 /* CardPreviewImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPreviewImageView.swift; sourceTree = "<group>"; };
+		57A5088521878F5D00A0E756 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		57A508872187905F00A0E756 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
+		57A5088921879FA100A0E756 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		57A5088B2187A0E500A0E756 /* DeckOfCardsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckOfCardsAPI.swift; sourceTree = "<group>"; };
+		57A5088D2187AB3300A0E756 /* CardResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardResults.swift; sourceTree = "<group>"; };
+		8290559485BFF245ECE58622 /* Pods-DeckOfCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeckOfCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeckOfCards/Pods-DeckOfCards.debug.xcconfig"; sourceTree = "<group>"; };
+		D8320977419E610EA16B2955 /* Pods-DeckOfCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeckOfCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeckOfCards/Pods-DeckOfCards.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E75F8167808937D22FD0B8C9 /* Pods_DeckOfCards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070EF82412705578A9D91EBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C1E8898CD6B209AFA02FDE7 /* Pods_DeckOfCards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		573898B521864E5300E6210D = {
 			isa = PBXGroup;
 			children = (
 				573898C021864E5300E6210D /* DeckOfCards */,
 				573898BF21864E5300E6210D /* Products */,
+				B1E845D1D3BAB7DEA077134F /* Pods */,
+				070EF82412705578A9D91EBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +91,66 @@
 		573898C021864E5300E6210D /* DeckOfCards */ = {
 			isa = PBXGroup;
 			children = (
+				577DCC17218845DE0006CA57 /* Model */,
+				577DCC18218846110006CA57 /* View */,
+				577DCC1E21884DC40006CA57 /* ViewModel */,
+				577DCC1D21884CF10006CA57 /* API */,
 				573898C121864E5300E6210D /* AppDelegate.swift */,
-				573898C321864E5300E6210D /* ViewController.swift */,
 				573898C521864E5300E6210D /* Main.storyboard */,
 				573898C821864E5500E6210D /* Assets.xcassets */,
 				573898CA21864E5500E6210D /* LaunchScreen.storyboard */,
 				573898CD21864E5500E6210D /* Info.plist */,
 			);
 			path = DeckOfCards;
+			sourceTree = "<group>";
+		};
+		577DCC17218845DE0006CA57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57A5088921879FA100A0E756 /* Deck.swift */,
+				573898D521865B9F00E6210D /* Card.swift */,
+				57A5088D2187AB3300A0E756 /* CardResults.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		577DCC18218846110006CA57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				573898C321864E5300E6210D /* InitialViewController.swift */,
+				577DCC1F21884E290006CA57 /* Extension+InitialViewController.swift */,
+				573898D32186529600E6210D /* PreviewViewController.swift */,
+				57A5088521878F5D00A0E756 /* CardCell.swift */,
+				57A508872187905F00A0E756 /* CardImageView.swift */,
+				577DCC21218850000006CA57 /* CardPreviewImageView.swift */,
+				577DCC1321881F220006CA57 /* SuitHeaderLabel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		577DCC1D21884CF10006CA57 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				57A5088B2187A0E500A0E756 /* DeckOfCardsAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		577DCC1E21884DC40006CA57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				577DCC1B218848A90006CA57 /* CardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B1E845D1D3BAB7DEA077134F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8290559485BFF245ECE58622 /* Pods-DeckOfCards.debug.xcconfig */,
+				D8320977419E610EA16B2955 /* Pods-DeckOfCards.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 573898D021864E5500E6210D /* Build configuration list for PBXNativeTarget "DeckOfCards" */;
 			buildPhases = (
+				F2ABABFA181D2F5C7D315196 /* [CP] Check Pods Manifest.lock */,
 				573898BA21864E5300E6210D /* Sources */,
 				573898BB21864E5300E6210D /* Frameworks */,
 				573898BC21864E5300E6210D /* Resources */,
+				56B6014AD1CA6DD39D20AF56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +221,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56B6014AD1CA6DD39D20AF56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DeckOfCards/Pods-DeckOfCards-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeckOfCards/Pods-DeckOfCards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2ABABFA181D2F5C7D315196 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeckOfCards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		573898BA21864E5300E6210D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				573898C421864E5300E6210D /* ViewController.swift in Sources */,
+				577DCC1C218848A90006CA57 /* CardViewModel.swift in Sources */,
+				577DCC22218850000006CA57 /* CardPreviewImageView.swift in Sources */,
+				577DCC1421881F220006CA57 /* SuitHeaderLabel.swift in Sources */,
+				57A5088A21879FA100A0E756 /* Deck.swift in Sources */,
+				57A5088621878F5D00A0E756 /* CardCell.swift in Sources */,
+				57A5088C2187A0E500A0E756 /* DeckOfCardsAPI.swift in Sources */,
+				577DCC2021884E290006CA57 /* Extension+InitialViewController.swift in Sources */,
+				573898C421864E5300E6210D /* InitialViewController.swift in Sources */,
 				573898C221864E5300E6210D /* AppDelegate.swift in Sources */,
+				573898D42186529600E6210D /* PreviewViewController.swift in Sources */,
+				57A5088E2187AB3300A0E756 /* CardResults.swift in Sources */,
+				57A508882187905F00A0E756 /* CardImageView.swift in Sources */,
+				573898D621865B9F00E6210D /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +421,7 @@
 		};
 		573898D121864E5500E6210D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8290559485BFF245ECE58622 /* Pods-DeckOfCards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +440,7 @@
 		};
 		573898D221864E5500E6210D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8320977419E610EA16B2955 /* Pods-DeckOfCards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
