@@ -75,9 +75,9 @@ class InitialViewController: UITableViewController {
                 let converted1 = Card.convertCardType(with: c1)
                 let converted2 = Card.convertCardType(with: c2)
 
-                return converted1 > converted2
+                return converted1 < converted2
             }) {
-                arrayForGrouping.append(sortedVals.reversed())
+                arrayForGrouping.append(sortedVals)
             }
         }
         
