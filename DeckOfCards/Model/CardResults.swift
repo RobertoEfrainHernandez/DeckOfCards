@@ -9,8 +9,8 @@
 import Foundation
 
 struct CardResults: Decodable {
-    let success : Bool
+    let success   : Bool
     let remaining : Int
-    let deck_id : String
-    let cards : [Card]
+    let deckId   : String
+    let cards     : [Card]
 }

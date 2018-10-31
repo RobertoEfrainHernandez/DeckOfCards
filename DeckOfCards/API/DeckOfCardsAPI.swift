@@ -20,7 +20,9 @@ class DeckOfCardsAPI {
             guard let data = data else { return }
             
             do {
-                let deck = try JSONDecoder().decode(Deck.self, from: data)
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let deck = try decoder.decode(Deck.self, from: data)
                completionHandler(deck)
             } catch let jsonErr {
                 print("Failed to get deck: ", jsonErr.localizedDescription)
@@ -41,7 +43,9 @@ class DeckOfCardsAPI {
             guard let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200 else { return }
             
             do {
-                let cards = try JSONDecoder().decode(CardResults.self, from: data)
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let cards = try decoder.decode(CardResults.self, from: data)
                 completionHandler(cards.cards)
             } catch let jsonErr {
                 print("Failed to get cards: ", jsonErr.localizedDescription)

@@ -25,13 +25,18 @@ class InitialViewController: UITableViewController {
     //MARK:- Private Functions
     
     fileprivate func setNavProperties() {
+        let attributes: [NSAttributedString.Key : Any] = [.foregroundColor : UIColor.white]
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = attributes
+        navigationController?.navigationBar.titleTextAttributes = attributes
+        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.137254902, green: 0.3529411765, blue: 0.1490196078, alpha: 1)
+        navigationController?.navigationBar.tintColor = .white
         navigationItem.title = "Deck of Cards"
+        
     }
     
     func modalPresent(for model: CardViewModel) {
         let previewVC = PreviewViewController()
-        //previewVC.image = image
         model.configureView(view: previewVC.cardView)
         let navPreviewVC = UINavigationController(rootViewController: previewVC)
         navPreviewVC.modalTransitionStyle = .crossDissolve
@@ -42,7 +47,7 @@ class InitialViewController: UITableViewController {
     /* API Call */
     fileprivate func getDeckAndCards() {
         DeckOfCardsAPI.shared.fetchDeck { (deck) in
-            guard let deckID = deck.deck_id else { return }
+            let deckID = deck.deckId
             DeckOfCardsAPI.shared.fetchCards(with: deckID, completionHandler: { (cards) in
                 self.cards = cards
                 self.groupedCards = self.setupGroupedCards(with: self.cards)
@@ -58,19 +63,17 @@ class InitialViewController: UITableViewController {
         var arrayForGrouping = [[Card]]()
         
         let groupedCardsBySuit = Dictionary(grouping: cards) { (element) -> String in
-            guard let suit = element.suit else { return "" }
-            return suit
+            return element.suit
         }
         
-        let keys = groupedCardsBySuit.keys
-        keys.forEach { (key) in
+        let sortedKeys = groupedCardsBySuit.keys.sorted()
+        sortedKeys.forEach { (key) in
             if let sortedVals = groupedCardsBySuit[key]?.sorted(by: { (card1, card2) -> Bool in
-                guard
-                    let c1 = card1.value,
-                    let c2 = card2.value,
-                    let converted1 = Card.convertCardType(with: c1),
-                    let converted2 = Card.convertCardType(with: c2)
-                else { return false }
+                
+                let c1 = card1.value
+                let c2 = card2.value
+                let converted1 = Card.convertCardType(with: c1)
+                let converted2 = Card.convertCardType(with: c2)
 
                 return converted1 > converted2
             }) {

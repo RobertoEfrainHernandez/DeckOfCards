@@ -34,7 +34,8 @@ class PreviewViewController: UIViewController {
     
     fileprivate func setNavButton() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close", style: .done, target: self, action: #selector(dismissPreview))
-        navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.1490196078, green: 0.3843137255, blue: 0.1568627451, alpha: 1)
+        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.137254902, green: 0.3529411765, blue: 0.1490196078, alpha: 1)
+        navigationController?.navigationBar.tintColor = .white
     }
     
     @objc func dismissPreview() {

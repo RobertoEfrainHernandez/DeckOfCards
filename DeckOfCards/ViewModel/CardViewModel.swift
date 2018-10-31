@@ -19,13 +19,11 @@ struct CardViewModel {
 
 extension CardViewModel {
     var cardName: String {
-        guard let code = model.code else { return ""}
-        return code
+        return model.code
     }
     
     var cardImage: String {
-        guard let imageURL = model.image else { return ""}
-        return imageURL
+        return model.image
     }
 }
 

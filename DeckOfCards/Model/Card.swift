@@ -8,20 +8,20 @@
 
 import Foundation
 
-class Card: Decodable {
-    let image : String?
-    let value : String?
-    let suit : String?
-    let code : String?
+struct Card: Decodable {
+    let image : String
+    let value : String
+    let suit  : String
+    let code  : String
     
-    init(image: String?, value: String?, suit: String?, code: String?) {
+    init(image: String, value: String, suit: String, code: String) {
         self.image = image
         self.value = value
         self.suit = suit
         self.code = code
     }
     
-    static func convertCardType(with cardVal: String?) -> Int? {
+    static func convertCardType(with cardVal: String) -> Int {
         switch cardVal {
         case "ACE":
             return 1
@@ -52,6 +52,6 @@ class Card: Decodable {
         default:
             break
         }
-        return nil
+        return -1
     }
 }
