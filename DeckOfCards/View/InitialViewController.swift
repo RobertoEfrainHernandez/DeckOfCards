@@ -48,8 +48,8 @@ class InitialViewController: UITableViewController {
     fileprivate func getDeckAndCards() {
         DeckOfCardsAPI.shared.fetchDeck { [unowned self] (deck) in
             let deckID = deck.deckId
-            DeckOfCardsAPI.shared.fetchCards(with: deckID, completionHandler: { (cards) in
-                self.cards = cards
+            DeckOfCardsAPI.shared.fetchCards(with: deckID, completionHandler: { (cardResults) in
+                self.cards = cardResults.cards
                 self.groupedCards = self.setupGroupedCards(with: self.cards)
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
